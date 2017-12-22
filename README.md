@@ -1,6 +1,6 @@
 # vue2
 
-> vue2 + echarts-v3 + vue-resource/vue-axios + vuex实现的一个小应用
+> vue2 + echarts-v3 + vue-resource/vue-axios + vuex + element-ui 实现的一个小应用
 
 ## Build Setup
 
