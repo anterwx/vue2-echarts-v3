@@ -1,17 +1,19 @@
 <template>
-  <div id="secondcomponent">
-    <el-card class="box-card">
-      <div slot="header" class="clearfix">
-        <h1 style="line-height: 36px; color: #20A0FF">豆瓣电影排行榜</h1>
-      </div>
-      <el-table :data="articles" style="width: 100%">
-        <el-table-column
-          prop="title"
-          label="电影名称">
-        </el-table-column>
-      </el-table>
-    </el-card>
-  </div>
+ <el-container>
+    <el-header>
+      <h1 style="color:#ffffff;">豆瓣电影排行榜</h1>
+    </el-header>
+    <el-main>
+      <el-card>
+        <el-table :data="articles">
+          <el-table-column
+            prop="title"
+            label="电影名称">
+          </el-table-column>
+        </el-table>
+      </el-card>
+    </el-main>
+  </el-container>
 </template>
 <script>
 export default {
@@ -59,5 +61,4 @@ export default {
   }
 };
 </script>
-<style>
 

@@ -1,7 +1,9 @@
 <template>
-  <div class="echarts">
-    <chart :option="pie" :theme="polarTheme"></chart>
-  </div>
+  <el-container>
+    <el-main>
+      <chart :option="pie" :theme="polarTheme"></chart>
+    </el-main>
+  </el-container>
 </template>
 <script>
 import IEcharts from "vue-echarts-v3/src/lite.js";
@@ -20,14 +22,3 @@ export default {
   })
 };
 </script>
-<style scoped>
-.echarts {
-    text-align: center;
-    border-radius: 6px;
-    box-sizing: border-box;
-    padding:10px;
-    height: 600px;
-    width: 100%;
-    background-color: #383546;
-}
-</style>

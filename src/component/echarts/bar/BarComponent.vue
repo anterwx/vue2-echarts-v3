@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <el-button type="danger" round @click="doRandom">模拟加载数据...</el-button>
-    <div class="echarts">
+  <el-container>
+    <el-header>
+      <el-button type="primary" round @click="doRandom">加载数据</el-button>
+    </el-header>
+    <el-main>
       <chart :option="bar" :theme="polarTheme" :loading="loading" @ready="onReady" @click="onClick"></chart>
-    </div>
-  </div>
+    </el-main>
+  </el-container>
 </template>
 
 <script type="text/babel">
@@ -47,15 +49,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.echarts {
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #383546;
-  height: 600px;
-}
-</style>

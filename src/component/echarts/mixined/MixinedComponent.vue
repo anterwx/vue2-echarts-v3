@@ -132,14 +132,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-.echarts {
-  text-align: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  height: 600px;
-  width: 100%;
-  background-color: #383546;
-}
-</style>
 

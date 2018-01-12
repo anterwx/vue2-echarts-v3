@@ -1,5 +1,5 @@
 <template>
-  <chart class="echarts" :options="mixined" ref="mixined" auto-resize @click="onClick"></chart>
+  <chart :options="mixined" ref="mixined" auto-resize @click="onClick"></chart>
 </template>
 <script>
 import Echarts from "../EchartsComponent.vue";
@@ -29,14 +29,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.echarts {
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #383546;
-  height: 600px;
-}
-</style>

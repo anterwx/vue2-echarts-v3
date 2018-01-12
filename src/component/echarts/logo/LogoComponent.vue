@@ -1,7 +1,7 @@
 <template>
-    <div class="logo">
-      <chart :option="logo"></chart>
-    </div>
+  <el-container>
+    <chart :option="logo"></chart>
+  </el-container>
 </template>
 <script>
 import IEcharts from "vue-echarts-v3/src/lite.js";
@@ -17,9 +17,3 @@ export default {
   })
 };
 </script>
-
-<style scoped>
-.logo {
-  height: 100px;
-}
-</style>
