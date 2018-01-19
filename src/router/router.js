@@ -17,7 +17,7 @@ export default new VueRouter({
     path: '/logo',
     component: LogoComponent
   }, {
-    path: '/page',
+    path: '/',
     component: PageComponent
   }, {
     path: '/movie',

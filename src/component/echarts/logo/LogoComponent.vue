@@ -1,7 +1,5 @@
 <template>
-  <el-container>
-    <chart :option="logo"></chart>
-  </el-container>
+  <chart :option="logo"></chart>
 </template>
 <script>
 import IEcharts from "vue-echarts-v3/src/lite.js";

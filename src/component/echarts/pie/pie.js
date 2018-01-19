@@ -1,22 +1,13 @@
 let scale = 1;
 let echartData = [{
-    value: 2154,
-    name: '曲阜师范大学'
+    value: 2515,
+    name: '移动端注册'
 }, {
-    value: 3854,
-    name: '潍坊学院'
+    value: 3154,
+    name: 'PC端注册'
 }, {
-    value: 3515,
-    name: '青岛职业技术学院'
-}, {
-    value: 3515,
-    name: '淄博师范高等专科'
-}, {
-    value: 3854,
-    name: '鲁东大学'
-}, {
-    value: 2154,
-    name: '山东师范大学'
+    value: 5854,
+    name: '管理端导入'
 }]
 let rich = {
     yellow: {
@@ -52,22 +43,22 @@ let rich = {
 export default {
     backgroundColor: "#383546",
     title: {
-        text:'总考生数',
-        left:'center',
-        top:'53%',
-        padding:[24,0],
-        textStyle:{
-            color:'#fff',
-            fontSize:18*scale,
-            align:'center'
+        text: '总人数',
+        left: 'center',
+        top: '53%',
+        padding: [24, 0],
+        textStyle: {
+            color: '#fff',
+            fontSize: 18 * scale,
+            align: 'center'
         }
     },
     legend: {
-        selectedMode:false,
-        formatter: function(name) {
+        selectedMode: false,
+        formatter: function (name) {
             var total = 0; //各科正确率总和
             var averagePercent; //综合正确率
-            echartData.forEach(function(value, index, array) {
+            echartData.forEach(function (value, index, array) {
                 total += value.value;
             });
             return '{total|' + total + '}';
@@ -78,7 +69,7 @@ export default {
         left: 'center',
         top: 'center',
         icon: 'none',
-        align:'center',
+        align: 'center',
         textStyle: {
             color: "#fff",
             fontSize: 16 * scale,
@@ -86,17 +77,17 @@ export default {
         },
     },
     series: [{
-        name: '总考生数量',
+        name: '总人数量',
         type: 'pie',
         radius: ['42%', '50%'],
         hoverAnimation: false,
         color: ['#c487ee', '#deb140', '#49dff0', '#034079', '#6f81da', '#00ffb4'],
         label: {
             normal: {
-                formatter: function(params, ticket, callback) {
+                formatter: function (params, ticket, callback) {
                     var total = 0; //考生总数量
                     var percent = 0; //考生占比
-                    echartData.forEach(function(value, index, array) {
+                    echartData.forEach(function (value, index, array) {
                         total += value.value;
                     });
                     percent = ((params.value / total) * 100).toFixed(1);

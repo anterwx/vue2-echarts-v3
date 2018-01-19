@@ -1,23 +1,15 @@
 <template>
-  <el-container>
-    <el-main>
-      <chart :option="pie" :theme="polarTheme"></chart>
-    </el-main>
-  </el-container>
+  <chart :options="pie" auto-resize></chart>
 </template>
 <script>
-import IEcharts from "vue-echarts-v3/src/lite.js";
-import "echarts/lib/chart/pie";
-import "echarts/theme/dark";
-
+import Echarts from "../EchartsComponent.vue";
 import pieOptions from "./pie";
 
 export default {
   components: {
-    chart: IEcharts
+    chart: Echarts
   },
   data: () => ({
-    polarTheme: "dark",
     pie: pieOptions
   })
 };

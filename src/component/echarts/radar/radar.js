@@ -1,5 +1,6 @@
 export default {
     title: {
+        top: 20,
         left: 'center',
         text: '霍兰德职业兴趣量表',
         textStyle: {
@@ -9,22 +10,21 @@ export default {
     },
     tooltip: {},
     legend: {
-        top: 50,
+        top: 70,
         itemWidth: 12,
         itemHeight: 12,
         data: ['预测指标', '实际指标'],
         textStyle: {
             color: '#fff',
-            fontSize: 14
+            fontSize: 15
         }
     },
     radar: {
         radius: '50%',
-        splitNumber: 8,
-        textStyle: {
-            color: '#FFF',
-            fontSize: 20
+        name: {
+            fontSize: 14
         },
+        splitNumber: 8,
         axisLine: {
             lineStyle: {
                 color: '#fff',
@@ -48,22 +48,22 @@ export default {
             }
         },
         indicator: [{
-            name: 'A艺术',
+            name: 'A 艺术',
             max: 6000
         }, {
-            name: 'S社会',
+            name: 'S 社会',
             max: 16000
         }, {
-            name: 'E企业',
+            name: 'E 企业',
             max: 30000
         }, {
-            name: 'C常规',
+            name: 'C 常规',
             max: 35000
         }, {
-            name: 'R实际',
+            name: 'R 实际',
             max: 50000
         }, {
-            name: 'I调研',
+            name: 'I 调研',
             max: 25000
         }]
     },
@@ -142,13 +142,13 @@ export default {
         r: 0.35,
         colorStops: [{
             offset: 0,
-            color: '#895355' // 0% 处的颜色
+            color: '#383546' // 0% 处的颜色
         }, {
             offset: .4,
             color: '#593640' // 100% 处的颜色
         }, {
             offset: 1,
-            color: '#39273d' // 100% 处的颜色
+            color: '#383546' // 100% 处的颜色
         }],
         globalCoord: false // 缺省为 false
     }

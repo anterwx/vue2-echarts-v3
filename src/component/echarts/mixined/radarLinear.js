@@ -124,7 +124,7 @@ export let option = {
   },
   legend: {
     top: 220,
-    left: 80,
+    right: 80,
     orient: "vertical",
     itemGap: 15,
     itemWidth: 12,
@@ -188,8 +188,9 @@ export let option = {
   grid: {
     left: 90,
     right: 80,
-    bottom: 40,
-    top: "60%"
+    bottom: 10,
+    top: "60%",
+    containLabel: true
   },
   xAxis: {
     type: "category",
@@ -211,7 +212,6 @@ export let option = {
     },
     max: maxData,
     splitNumber: 4,
-
     axisLine: {
       lineStyle: {
         opacity: 0

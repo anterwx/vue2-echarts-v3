@@ -9,6 +9,7 @@
 <script>
 import echarts from "echarts/lib/echarts";
 import debounce from "lodash.debounce";
+import "echarts/theme/dark";
 import Vue from "vue";
 
 // enumerating ECharts events for now

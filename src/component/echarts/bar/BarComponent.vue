@@ -1,50 +1,33 @@
 <template>
-  <el-container>
-    <el-header>
-      <el-button type="primary" round @click="doRandom">加载数据</el-button>
-    </el-header>
-    <el-main>
-      <chart :option="bar" :theme="polarTheme" :loading="loading" @ready="onReady" @click="onClick"></chart>
-    </el-main>
-  </el-container>
+  <chart :options="bar" theme="dark"  @click="onClick" auto-resize></chart>
 </template>
-
-<script type="text/babel">
-import IEcharts from "vue-echarts-v3/src/lite.js";
-import "echarts/lib/chart/bar";
-import "echarts/lib/component/title";
-import "echarts/theme/dark";
-
+<script>
+import Echarts from "../EchartsComponent.vue";
 import barOptions from "./bar";
 
 export default {
-  name: "view",
   components: {
-    chart: IEcharts
+    chart: Echarts
   },
   props: {},
   data: () => ({
-    loading: false,
-    polarTheme: "dark",
     bar: barOptions
   }),
   methods: {
     doRandom() {
-      this.loading = true;
       setTimeout(() => {
         let data = [];
-        for (let i = 0, min = 5, max = 999; i < 7; i++) {
+        for (let i = 1, min = 5, max = 999; i < 24; i++) {
           data.push(Math.floor(Math.random() * (max + 1 - min) + min));
         }
-        this.bar.series[0].data = data;
-        this.loading = false;
+        this.bar.series[0].data = data.sort((a,b)=>{
+          return a-b;
+        });
       }, 500);
-    },
-    onReady(instance) {
-      console.log(instance);
     },
     onClick(event, instance, echarts) {
       console.log(arguments);
+      this.doRandom();
     }
   }
 };
