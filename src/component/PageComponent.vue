@@ -1,33 +1,32 @@
 <template>
   <el-container>
     <el-main>
-      <!-- <el-row type="flex">
-        <el-col :span="24">
+      <!-- <el-row type='flex'>
+        <el-col :span='24'>
           <logoComponent></logoComponent>
         </el-col>
       </el-row> -->
-      <el-row type="flex" style="height:100%;wdith:100%;">
-        <el-col :span="12" style="height:100%;">
-          <barComponent style="height:100%;"></barComponent>
+      <el-row type='flex' style='height:100%;wdith:100%;'>
+        <el-col :span='12' style='height:100%;'>
+          <barComponent style='height:100%;'></barComponent>
         </el-col>
-        <el-col :span="12" style="height:100%;">
-          <el-row type="flex" style="height:50%;">
-            <el-col :span="24">
-              <pieComponent style="height:100%;"></pieComponent>
+        <el-col :span='12' style='height:100%;'>
+          <el-row type='flex' style='height:50%;'>
+            <el-col :span='24'>
+              <pieComponent style='height:100%;'></pieComponent>
             </el-col>
-            <!-- <el-col :span="24">
-              <radarComponent style="height:100%;"></radarComponent>
+            <!-- <el-col :span='24'>
+              <radarComponent style='height:100%;'></radarComponent>
             </el-col> -->
           </el-row>
-          <el-row type="flex" style="height:50%;">
-            <el-col :span="24">
-              <radarComponent style="height:100%;"></radarComponent>
-              <!-- <circleRunComponent style="height:100%;"></circleRunComponent> -->
+          <el-row type='flex' style='height:50%;'>
+            <el-col :span='24'>
+              <radarComponent style='height:100%;'></radarComponent>
+              <!-- <circleRunComponent style='height:100%;'></circleRunComponent> -->
             </el-col>
           </el-row>
         </el-col>
       </el-row>
-      
     </el-main>
   </el-container>
 </template>

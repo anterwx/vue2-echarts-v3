@@ -1,5 +1,5 @@
 <template>
-  <chart :options="pie" auto-resize></chart>
+  <chart :options='pie' auto-resize></chart>
 </template>
 <script>
 import Echarts from "../EchartsComponent.vue";

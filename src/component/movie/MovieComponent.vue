@@ -1,14 +1,14 @@
 <template>
  <el-container>
     <el-header>
-      <h1 style="color:#ffffff;">豆瓣电影排行榜</h1>
+      <h1 style='color:#ffffff;'>豆瓣电影排行榜</h1>
     </el-header>
     <el-main>
       <el-card>
-        <el-table :data="articles">
+        <el-table :data='articles'>
           <el-table-column
-            prop="title"
-            label="电影名称">
+            prop='title'
+            label='电影名称'>
           </el-table-column>
         </el-table>
       </el-card>
@@ -38,17 +38,17 @@ export default {
         .then(
           response => {
             vm.articles = response.data.subjects;
-            // vm.articles = response.data["subjects"];
+            // vm.articles = response.data['subjects'];
           },
           error => {
             console.log(error);
           }
         );
-      //使用axios
+      // 使用axios
       // vm.$http.get(vm.apiUrl).then(
       //   response => {
       //     vm.articles = response.data.subjects;
-      //     // vm.articles = response.data["subjects"];
+      //     // vm.articles = response.data['subjects'];
       //   },
       //   error => {
       //     console.log(error);
@@ -61,4 +61,3 @@ export default {
   }
 };
 </script>
-

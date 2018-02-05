@@ -1,34 +1,34 @@
 <template>
   <el-container class="el-container">
-    <el-header style="position:absolute;top:0;right:0;padding:10px;z-index:20;">
+    <el-header class="header">
       <el-dropdown>
         <span class="el-dropdown-link">
           切换<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>
-            <router-link to="/logo">svg实现动态logo</router-link>
+            <router-link to="/vue/logo">svg实现动态logo</router-link>
             </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/page">vue-router简单跳转</router-link>
+            <router-link to="/vue/page">vue-router简单跳转</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/movie">vue-resource访问后台API</router-link>
+            <router-link to="/vue/movie">vue-resource访问后台API</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/bar">vue-echarts-v3-bar</router-link>
+            <router-link to="/vue/bar">vue-echarts-v3-bar</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/pie">vue-echarts-v3-pie</router-link>
+            <router-link to="/vue/pie">vue-echarts-v3-pie</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/radar">vue-echarts-v3-radar</router-link>
+            <router-link to="/vue/radar">vue-echarts-v3-radar</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/mixined">vue-echarts-v3-mixined</router-link>
+            <router-link to="/vue/mixined">vue-echarts-v3-mixined</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
-            <router-link to="/circleRun">vue-echarts-v3-circleRun</router-link>
+            <router-link to="/vue/circleRun">vue-echarts-v3-circleRun</router-link>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -49,7 +49,15 @@ export default {
   })
 };
 </script>
-
+<style scope>
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 20;
+}
+</style>
 <style>
 body {
   font-family: Helvetica, sans-serif;
@@ -67,11 +75,11 @@ body {
   margin: 0;
   padding: 0;
 }
-.el-container h1{
+.el-container h1 {
   text-align: center;
 }
-.main{
-  padding:0;
+.main {
+  padding: 0;
 }
 .view {
   padding: 0;

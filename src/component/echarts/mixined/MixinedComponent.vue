@@ -1,5 +1,5 @@
 <template>
-    <div class="echarts"></div>
+    <div class='echarts'></div>
 </template>
 <script>
 import echarts from "echarts/lib/echarts";
@@ -132,4 +132,3 @@ export default {
   }
 };
 </script>
-

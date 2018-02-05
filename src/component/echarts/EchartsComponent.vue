@@ -1,5 +1,5 @@
 <template>
-  <div class="echarts"></div>
+  <div class='echarts'></div>
 </template>
 <style scoped>
 .echarts {
@@ -93,7 +93,7 @@ export default {
     }
   },
   watch: {
-    // use assign statements to tigger "options" and "group" setters
+    // use assign statements to tigger 'options' and 'group' setters
     options: {
       handler(options) {
         if (!this.chart && options) {
